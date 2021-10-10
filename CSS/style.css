@@ -1,0 +1,169 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Images/mountains_river_sun_143529_3840x2400.jpg);
+    background-position: top center;
+    background-size: cover;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+p{
+  text-align: center;
+  margin: 4px;
+}
+h5{
+  text-align: end;
+  font-size: 1rem;
+}
+.note {
+  color: red;
+  font-weight: 700;
+}
+
+.weather-card {
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255,0.18);
+    width: 20rem;
+    height: 41rem;
+    padding: 1rem;
+  }
+  .input {
+    width: 12rem;
+    padding: 1.5rem 0rem;
+    border: 1px solid #ccc;
+    border-radius: 30px 0 30px 0;
+    outline: 0;
+    color: #1b0760;
+    font-size: 1.5rem;
+    transition: 0.2s ease-out;
+    
+  }
+  .input-group {
+    width: 19rem;
+    transition: 0.2s ease-out;
+    border: 1px solid #ccc;
+    border-radius: 30px 0 30px 0;
+    display: flex;
+    background-color: white;
+    margin: 1rem 0.6rem;
+  }
+  .input-group .input{
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+  }
+  
+  @media screen and (min-width:1024px){
+    .weather-card {
+
+      width: 26rem;
+
+    }
+    .input {
+      width: 20rem;
+
+      
+    }
+    .input-group {
+      width: 25rem;
+
+    }
+    
+  }
+
+.btn {
+    border:0;
+    cursor: pointer;
+    height: 5rem;
+    width: 5rem;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  img{
+    height: 4rem;
+    width: 4rem; 
+    
+  }
+  .rotate-center:active{
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+  }
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+
+main{
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.location .city {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: darkslategray;
+  font-size: 2rem;
+  margin-bottom: 5px ;
+}
+
+.location .date {
+  color: rgb(70, 63, 63);
+  font-size: 1.3rem;
+}
+
+.current .temp {
+  color: rgb(219, 214, 214);
+  font-size: 6rem;
+  font-weight: 600;
+  margin: 3rem 0;
+  text-shadow: 2px 8px rgba(0, 0, 0, 0.6);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.current .temp span {
+  font-weight: 500;
+}
+.current .weather {
+  color: whitesmoke;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.6);
+}
+
+.current .minmax {
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: 500;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.6);
+
+}
+
